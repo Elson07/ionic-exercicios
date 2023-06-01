@@ -1,7 +1,7 @@
 <!-- Comando para executar o app "ionic serve" -->
 <!-- Area de cabeçalho -->
 <ion-header [translucent]="true">
-  <ion-toolbar color="dark">
+  <ion-toolbar>
     <ion-title>
       Meu App
     </ion-title>
@@ -9,8 +9,84 @@
 </ion-header>
 
 <!-- Area de conteudo -->
-<ion-content color="dark" [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="ion-padding">
   
+  <!-- Listas -->
+  <h4>Listas</h4>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>1.Lorem ipsum dolorem sit amet</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" name="star"></ion-icon>
+      <ion-label>2.Lorem ipsum dolorem sit amet</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Lista com avatar -->
+  <h4>Listas avatar</h4>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://images.unsplash.com/photo-1532704384331-d96a9862ec11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4NTYyMTcwNw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"></ion-img>
+      </ion-avatar>
+      <ion-label>Jubileu Corvo</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://images.unsplash.com/photo-1532704384331-d96a9862ec11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4NTYyMTcwNw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"></ion-img>
+      </ion-avatar>
+      <ion-label>Pica Pau</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Listas com slide -->
+  <h4>Lista slide</h4>
+  <ion-list>
+    <ion-item-sliding>
+      
+      <ion-item>
+        <ion-label>Jubileu Corvo</ion-label>
+      </ion-item>
+      <!-- Opções do item de cima -->
+      <ion-item-options side="start"> <!-- side define a direção de arratar a opção, "start" da esquerda e "end" da direita -->
+        <!-- Opção de opções -->
+        <ion-item-option color="success">
+          <ion-icon slot="start" name="create"></ion-icon>
+          Alterar
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="start" name="trash"></ion-icon>
+          Excluir
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      
+      <ion-item>
+        <ion-label>Pica Pau</ion-label>
+      </ion-item>
+      <!-- Opções do item de cima -->
+      <ion-item-options side="start"> <!-- side define a direção de arratar a opção, "start" da esquerda e "end" da direita -->
+        <!-- Opção de opções -->
+        <ion-item-option color="success">
+          <ion-icon slot="start" name="create"></ion-icon>
+          Alterar
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="start" name="trash"></ion-icon>
+          Excluir
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+
+
   <h4>Cartões</h4>
 
   <!-- Container do cartão -->
@@ -87,14 +163,24 @@
 
   <!-- Cartão com listagem de itens -->
   <h4>Cartão com listagem de itens</h4>
-  
+
+  <ion-card color="secondary">      
+    <ion-item href="https://www.google.com.br/">
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat at massa volutpat sodales.</ion-label>
+    </ion-item>
+    <ion-item href="https://www.google.com.br/">
+      <ion-icon slot="start" name="star"></ion-icon>
+      <ion-label>2. Lorem ipsum dolor sit amet</ion-label>
+    </ion-item>
+  </ion-card>
 
 
 </ion-content>
 
 <!-- Area de rodapé -->
 <ion-footer>
-  <ion-toolbar color="dark">
+  <ion-toolbar>
     <ion-title>
       Rodapé
     </ion-title>
