@@ -1,100 +1,91 @@
-<!-- Comando para executar o app "ionic serve" -->
-<!-- Area de cabeçalho -->
 <ion-header [translucent]="true">
-  <ion-toolbar color="dark">
+  <ion-toolbar>
     <ion-title>
-      Meu App
+      Componentes - Entrada de dados.
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<!-- Area de conteudo -->
 <ion-content [fullscreen]="true" class="ion-padding">
+
   
-  <h1>Botões</h1>
-  <ion-button>Padrão</ion-button>
-  <ion-button href="https://www.google.com.br/">Link</ion-button>
-  
-  <!-- Cores --> 
-  <h1>Cores</h1>
-  <ion-button color="primary">Primary</ion-button>
-  <ion-button color="secondary">Secondary</ion-button>
-  <ion-button color="tertiary">Tertiary</ion-button>
+  <h4>Configurando input position (floating, fixed e stacked)</h4>
 
-  <ion-button color="success">Success</ion-button>
-  <ion-button color="warning">Warning</ion-button>
-  <ion-button color="danger">Danger</ion-button>
-  <ion-button color="light">Light</ion-button>
-  <ion-button color="medium">Medium</ion-button>
-  <ion-button color="dark">Dark</ion-button>
+  <ion-item>
+    <ion-label position="floating">floating:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
 
+  <ion-item>
+    <ion-label position="fixed">fixed:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
 
-  <!-- Botões expandidos -->
-  <h4>Expandido</h4>
-  <!-- full expande todo o espaço -->
-  <ion-button expand="full">Expandido full</ion-button>
-  <!-- block expande todo o espaço, mas com cantos arredondados -->
-  <ion-button expand="block">Expandido block</ion-button>
+  <ion-item>
+    <ion-label position="stacked">stacked:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
 
 
-  <!-- Botões arredondados -->
-  <h4>Arredondado</h4>
-  <!-- shape é a propriedade para alterar a forma, e round é o valor para arredondado -->
-  <ion-button shape="round">Arredondado</ion-button>
+  <h4>Entrada de dados (value, placeholder, clearInput)</h4>
+
+  <ion-item>
+    <ion-input value="Value"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Placeholder"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>clearInput:</ion-label>
+    <ion-input clearInput placeholder="Limpa a entrada de dados"></ion-input>
+  </ion-item>
 
 
-  <!-- Botões preenchidos -->
-  <h4>Preenchimento</h4>
-  <!-- fill é a propriedade de preenchimento -->
-  <ion-button fill="outline">Preenchimento</ion-button>
+  <h4>Tipos de entradas (text, number, password, email, tel, url, search)</h4>
 
+  <ion-item>
+    <ion-label>Text:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
 
-  <!--Botões com ícones -->
-  <h4>Ícones</h4>
-  <!-- 
-    A tag ion-icon é onde definimos o icones. 
-    A propriedade "name" é onde definimos o valor do ícone, ou ícone na qual vamos usar,
-    A propriedade "slot" define a posição do ícone, e os valores aceitos são, "start" para esquerda, "end" para direita e "icon-only" para apenas ícone, sem texto   
+  <ion-item>
+    <ion-label>Number:</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
 
-    Para mais iformações sobre ícones, acesse a documentação em <<https://ionic.io/ionicons>>
-  -->
-  <ion-button>
-    <ion-icon name="star" slot="start" ></ion-icon>
-    Ícone
-  </ion-button><br>
+  <ion-item>
+    <ion-label>Password:</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
 
-  <ion-button>
-    <ion-icon name="star" slot="end" ></ion-icon>
-    Ícone
-  </ion-button><br>
+  <ion-item>
+    <ion-label>E-mail:</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
 
-  <ion-button>
-    <ion-icon name="star" slot="icon-only" ></ion-icon>
-  </ion-button><br>
+  <ion-item>
+    <ion-label>Tel:</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
 
-  <ion-button>
-    <ion-icon name="settings-outline" slot="icon-only"></ion-icon>
-  </ion-button><br>
+  <ion-item>
+    <ion-label>URL:</ion-label>
+    <ion-input type="url"></ion-input>
+  </ion-item>
 
-
-  <!-- Tamanho de botões -->
-  <h4>Tamanhos</h4>
-  <!-- 
-    size é a propriedade para definir o tamanho dos botões 
-    Os valores aseitos em size são, "large" para grande, "small" para pequeno  
-  -->
-  <ion-button size="large">Large</ion-button>
-  <ion-button>Padrão</ion-button>
-  <ion-button size="small">Small</ion-button>
-
+  <ion-item>
+    <ion-label>Search:</ion-label>
+    <ion-input type="search"></ion-input>
+  </ion-item>
 
 </ion-content>
 
-<!-- Area de rodapé -->
 <ion-footer>
-  <ion-toolbar color="dark">
+  <ion-toolbar>
     <ion-title>
-      Rodapé
+      Todos os direitos reservados
     </ion-title>
   </ion-toolbar>
 </ion-footer>
