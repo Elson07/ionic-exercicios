@@ -1,84 +1,102 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Componentes - Entrada de dados.
+      Sistemas de grids
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
+  <h4>Grid</h4>
+  <!-- grid cria um container onde contem linhas e colunas -->
+  <ion-grid>
+    <!-- row cria uma linha no gred -->
+    <ion-row>
+      <!-- col cria coluna de espaso na row e size define o total de colunas -->
+      <ion-col size="8">Conteúdo 1</ion-col>
+      <ion-col size="4">Conteúdo 2</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="4">Conteúdo 1</ion-col>
+      <ion-col size="4">Conteúdo 2</ion-col>
+      <ion-col size="4">Conteúdo 3</ion-col>
+    </ion-row>
+
+  </ion-grid>
   
-  <h4>Configurando input position (floating, fixed e stacked)</h4>
 
-  <ion-item>
-    <ion-label position="floating">floating:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="fixed">fixed:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="stacked">stacked:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+  <h4>Grid - offset</h4>
+   <ion-grid>
+    <ion-row>
+      <ion-col size="5">Conteúdo 1</ion-col>
+      <!-- offset é a quantidade de colunas antes da coluna definada -->
+      <ion-col size="4" offset="3">Conteúdo 2</ion-col>
+    </ion-row>
+  </ion-grid>
 
 
-  <h4>Entrada de dados (value, placeholder, clearInput)</h4>
+  <h4>Grid - alinhamento textos (ion-text-start, ion-text-end, ion-text-center)</h4>
+  <ion-grid>
 
-  <ion-item>
-    <ion-input value="Value"></ion-input>
-  </ion-item>
+    <!-- Alinhamento ion-text-start, este alinhamento é padrão -->
+    <ion-row class="ion-text-start">
+      <ion-col size="4">1 start</ion-col>
+      <ion-col size="4">2 start</ion-col>
+      <ion-col size="4">3 start</ion-col>
+    </ion-row>
 
-  <ion-item>
-    <ion-input placeholder="Placeholder"></ion-input>
-  </ion-item>
+    <!-- Alinhamento ion-text-end -->
+    <ion-row class="ion-text-end">
+      <ion-col size="4">1 end</ion-col>
+      <ion-col size="4">2 end</ion-col>
+      <ion-col size="4">3 end</ion-col>
+    </ion-row>
 
-  <ion-item>
-    <ion-label>clearInput:</ion-label>
-    <ion-input clearInput placeholder="Limpa a entrada de dados"></ion-input>
-  </ion-item>
+    <!-- Alinhamento ion-text-center -->
+    <ion-row class="ion-text-center">
+      <ion-col size="4">1 center</ion-col>
+      <ion-col size="4">2 center</ion-col>
+      <ion-col size="4">3 center</ion-col>
+    </ion-row>
+
+    <!-- Alinhamento nas colunas -->
+    <ion-row>
+      <ion-col class="ion-text-start" size="4">1 start</ion-col>
+      <ion-col class="ion-text-end" size="4">2 end</ion-col>
+      <ion-col class="ion-text-center" size="4">3 center</ion-col>
+    </ion-row>
+
+  </ion-grid>
 
 
-  <h4>Tipos de entradas (text, number, password, email, tel, url, search)</h4>
+  <h4>Grid - alinhamento vertical</h4>
+   <ion-grid>
 
-  <ion-item>
-    <ion-label>Text:</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+    <ion-row class="ion-align-items-start">
+      <ion-col size="4">1</ion-col>
+      <ion-col size="4">2</ion-col>
+      <ion-col size="4">3 <br/> + <br/> + </ion-col>
+    </ion-row>
 
-  <ion-item>
-    <ion-label>Number:</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
+    <br/>
 
-  <ion-item>
-    <ion-label>Password:</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>E-mail:</ion-label>
-    <ion-input type="email"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Tel:</ion-label>
-    <ion-input type="tel"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>URL:</ion-label>
-    <ion-input type="url"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Search:</ion-label>
-    <ion-input type="search"></ion-input>
-  </ion-item>
+    <ion-row class="ion-align-items-end">
+        <ion-col size="4">1</ion-col>
+        <ion-col size="4">2</ion-col>
+        <ion-col size="4">3 <br/> + <br/> + </ion-col>
+    </ion-row>
+    
+    <br/>
+    
+    <ion-row class="ion-align-items-center">
+        <ion-col size="4">1</ion-col>
+        <ion-col size="4">2</ion-col>
+        <ion-col size="4">3 <br/> + <br/> + </ion-col>
+    </ion-row>
+    
+    </ion-grid>
 
 </ion-content>
 
